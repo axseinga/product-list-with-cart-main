@@ -1,5 +1,6 @@
 export const data = [
   {
+    id: "WAFBE",
     image: {
       thumbnail: "/src/assets/images/image-waffle-thumbnail.jpg",
       mobile: "/src/assets/images/image-waffle-mobile.jpg",
@@ -11,6 +12,7 @@ export const data = [
     price: 6.5,
   },
   {
+    id: "CREBRU",
     image: {
       thumbnail: "/src/assets/images/image-creme-brulee-thumbnail.jpg",
       mobile: "/src/assets/images/image-creme-brulee-mobile.jpg",
@@ -22,6 +24,7 @@ export const data = [
     price: 7.0,
   },
   {
+    id: "MACR",
     image: {
       thumbnail: "/src/assets/images/image-macaron-thumbnail.jpg",
       mobile: "/src/assets/images/image-macaron-mobile.jpg",
@@ -33,6 +36,7 @@ export const data = [
     price: 8.0,
   },
   {
+    id: "TIR",
     image: {
       thumbnail: "/src/assets/images/image-tiramisu-thumbnail.jpg",
       mobile: "/src/assets/images/image-tiramisu-mobile.jpg",
@@ -44,6 +48,7 @@ export const data = [
     price: 5.5,
   },
   {
+    id: "PIBAK",
     image: {
       thumbnail: "/src/assets/images/image-baklava-thumbnail.jpg",
       mobile: "/src/assets/images/image-baklava-mobile.jpg",
@@ -55,6 +60,7 @@ export const data = [
     price: 4.0,
   },
   {
+    id: "LEMERP",
     image: {
       thumbnail: "/src/assets/images/image-meringue-thumbnail.jpg",
       mobile: "/src/assets/images/image-meringue-mobile.jpg",
@@ -66,6 +72,7 @@ export const data = [
     price: 5.0,
   },
   {
+    id: "REDVELC",
     image: {
       thumbnail: "/src/assets/images/image-cake-thumbnail.jpg",
       mobile: "/src/assets/images/image-cake-mobile.jpg",
@@ -77,6 +84,7 @@ export const data = [
     price: 4.5,
   },
   {
+    id: "SALCARBR",
     image: {
       thumbnail: "/src/assets/images/image-brownie-thumbnail.jpg",
       mobile: "/src/assets/images/image-brownie-mobile.jpg",
@@ -88,6 +96,7 @@ export const data = [
     price: 4.5,
   },
   {
+    id: "VALPNCOT",
     image: {
       thumbnail: "/src/assets/images/image-panna-cotta-thumbnail.jpg",
       mobile: "/src/assets/images/image-panna-cotta-mobile.jpg",

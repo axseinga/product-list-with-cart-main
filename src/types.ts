@@ -1,4 +1,5 @@
-export type ProductItemT = {
+export interface ProductItemT {
+  id: string;
   image: {
     thumbnail: string;
     mobile: string;
@@ -8,4 +9,4 @@ export type ProductItemT = {
   name: string;
   category: string;
   price: number;
-};
+}

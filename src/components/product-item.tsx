@@ -3,17 +3,42 @@ import { ProductItemT } from "../types";
 import { IconAdd } from "./icons/icon-add";
 import { IconDecrement } from "./icons/icon-decrement";
 import { IconIncrement } from "./icons/icon-increment";
+import useCartStateStore, { CartOperationT } from "../store/cart-store";
 
 type ProductItemProps = {
   item: ProductItemT;
 };
 
 export const ProductItem = ({ item }: ProductItemProps) => {
+  const { cart, addItemToCart, updateItemCount, removeItemFromCart } =
+    useCartStateStore();
   const [isSelected, setISelected] = React.useState(false);
-  const [count, setCount] = React.useState(1);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    const productCount = cart.filter((cartItem) => cartItem.id === item.id)[0]
+      ?.count;
+
+    if (productCount) {
+      setCount(productCount);
+      setISelected(true);
+    } else {
+      setCount(0);
+      setISelected(false);
+    }
+  }, [cart, item.id]);
+
+  const product = {
+    id: item.id,
+    name: item.name,
+    category: item.category,
+    price: item.price,
+    image: item.image.thumbnail,
+    count: 1,
+  };
 
   const baseStyleButtonAddToCart =
-    "absolute -bottom-5 left-1/2 flex w-max -translate-x-1/2 transform items-center rounded-full border p-3 px-4 font-semibold transition-all w-[10rem]";
+    "absolute -bottom-5 left-1/2 flex w-max -translate-x-1/2 transform items-center rounded-full border p-3 px-4 font-semibold transition-all w-36";
   const styleButtonRound =
     "flex h-5 w-5 items-center justify-center rounded-full border-2 border-rose-100";
 
@@ -41,7 +66,12 @@ export const ProductItem = ({ item }: ProductItemProps) => {
             <button
               className={styleButtonRound}
               onClick={() => {
-                if (count <= 1) return;
+                if (count === 0) return;
+                if (count === 1) {
+                  removeItemFromCart(item.id);
+                } else {
+                  updateItemCount(product, CartOperationT.descrease);
+                }
                 setCount((prev) => prev - 1);
               }}
             >
@@ -52,6 +82,11 @@ export const ProductItem = ({ item }: ProductItemProps) => {
               className={styleButtonRound}
               onClick={() => {
                 if (count === 100) return;
+                if (count === 0) {
+                  addItemToCart(product);
+                } else {
+                  updateItemCount(product, CartOperationT.increase);
+                }
                 setCount((prev) => prev + 1);
               }}
             >

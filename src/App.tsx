@@ -1,4 +1,4 @@
-import { CartContainer } from "./containers/cart-container";
+import { CartContainer } from "./containers/cart/cart-container";
 import { ProductsList } from "./containers/products-list";
 
 export const App = () => {
