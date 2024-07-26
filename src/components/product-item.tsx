@@ -38,7 +38,7 @@ export const ProductItem = ({ item }: ProductItemProps) => {
   };
 
   const baseStyleButtonAddToCart =
-    "absolute -bottom-5 left-1/2 flex w-max -translate-x-1/2 transform items-center rounded-full border p-3 px-4 font-semibold transition-all w-36";
+    "w-36 absolute -bottom-5 left-1/2 flex -translate-x-1/2 transform items-center rounded-full border p-3 px-4 font-semibold border-rose-950 transition-all";
   const styleButtonRound =
     "flex h-5 w-5 items-center justify-center rounded-full border-2 border-rose-100";
 
@@ -61,7 +61,7 @@ export const ProductItem = ({ item }: ProductItemProps) => {
         </div>
         {isSelected ? (
           <div
-            className={`${baseStyleButtonAddToCart} justify-between border-rose-950 bg-customRed text-rose-100`}
+            className={`${baseStyleButtonAddToCart} justify-between bg-customRed text-rose-100`}
           >
             <button
               className={styleButtonRound}
@@ -95,7 +95,7 @@ export const ProductItem = ({ item }: ProductItemProps) => {
           </div>
         ) : (
           <button
-            className={`${baseStyleButtonAddToCart} justify-evenly border-rose-950 bg-white hover:border-customRed hover:text-customRed`}
+            className={`${baseStyleButtonAddToCart} gap-1 justify-evenly bg-white hover:border-customRed hover:text-customRed`}
             onClick={() => setISelected((prev) => !prev)}
           >
             <IconAdd />
