@@ -1,11 +1,48 @@
+import Image1Thumbnail from "./assets/images/image-waffle-thumbnail.jpg";
+import Image1Mobile from "./assets/images/image-waffle-mobile.jpg";
+import Image1Tablet from "./assets/images/image-waffle-tablet.jpg";
+import Image1Desktop from "./assets/images/image-waffle-desktop.jpg";
+import Image2Thumbnail from "./assets/images/image-creme-brulee-thumbnail.jpg";
+import Image2Mobile from "./assets/images/image-creme-brulee-mobile.jpg";
+import Image2Tablet from "./assets/images/image-creme-brulee-tablet.jpg";
+import Image2Desktop from "./assets/images/image-creme-brulee-desktop.jpg";
+import Image3Thumbnail from "./assets/images/image-macaron-thumbnail.jpg";
+import Image3Mobile from "./assets/images/image-macaron-mobile.jpg";
+import Image3Tablet from "./assets/images/image-macaron-tablet.jpg";
+import Image3Desktop from "./assets/images/image-macaron-desktop.jpg";
+import Image4Thumbnail from "./assets/images/image-tiramisu-thumbnail.jpg";
+import Image4Mobile from "./assets/images/image-tiramisu-mobile.jpg";
+import Image4Tablet from "./assets/images/image-tiramisu-tablet.jpg";
+import Image4Desktop from "./assets/images/image-tiramisu-desktop.jpg";
+import Image5Thumbnail from "./assets/images/image-baklava-thumbnail.jpg";
+import Image5Mobile from "./assets/images/image-baklava-mobile.jpg";
+import Image5Tablet from "./assets/images/image-baklava-tablet.jpg";
+import Image5Desktop from "./assets/images/image-baklava-desktop.jpg";
+import Image6Thumbnail from "./assets/images/image-meringue-thumbnail.jpg";
+import Image6Mobile from "./assets/images/image-meringue-mobile.jpg";
+import Image6Tablet from "./assets/images/image-meringue-tablet.jpg";
+import Image6Desktop from "./assets/images/image-meringue-desktop.jpg";
+import Image7Thumbnail from "./assets/images/image-cake-thumbnail.jpg";
+import Image7Mobile from "./assets/images/image-cake-mobile.jpg";
+import Image7Tablet from "./assets/images/image-cake-tablet.jpg";
+import Image7Desktop from "./assets/images/image-cake-desktop.jpg";
+import Image8Thumbnail from "./assets/images/image-brownie-thumbnail.jpg";
+import Image8Mobile from "./assets/images/image-brownie-mobile.jpg";
+import Image8Tablet from "./assets/images/image-brownie-tablet.jpg";
+import Image8Desktop from "./assets/images/image-brownie-desktop.jpg";
+import Image9Thumbnail from "./assets/images/image-panna-cotta-thumbnail.jpg";
+import Image9Mobile from "./assets/images/image-panna-cotta-mobile.jpg";
+import Image9Tablet from "./assets/images/image-panna-cotta-tablet.jpg";
+import Image9Desktop from "./assets/images/image-panna-cotta-desktop.jpg";
+
 export const data = [
   {
     id: "WAFBE",
     image: {
-      thumbnail: "./src/assets/images/image-waffle-thumbnail.jpg",
-      mobile: "./src/assets/images/image-waffle-mobile.jpg",
-      tablet: "./src/assets/images/image-waffle-tablet.jpg",
-      desktop: "./src/assets/images/image-waffle-desktop.jpg",
+      thumbnail: Image1Thumbnail,
+      mobile: Image1Mobile,
+      tablet: Image1Tablet,
+      desktop: Image1Desktop,
     },
     name: "Waffle with Berries",
     category: "Waffle",
@@ -14,10 +51,10 @@ export const data = [
   {
     id: "CREBRU",
     image: {
-      thumbnail: "./src/assets/images/image-creme-brulee-thumbnail.jpg",
-      mobile: "./src/assets/images/image-creme-brulee-mobile.jpg",
-      tablet: "./src/assets/images/image-creme-brulee-tablet.jpg",
-      desktop: "./src/assets/images/image-creme-brulee-desktop.jpg",
+      thumbnail: Image2Thumbnail,
+      mobile: Image2Mobile,
+      tablet: Image2Tablet,
+      desktop: Image2Desktop,
     },
     name: "Vanilla Bean Crème Brûlée",
     category: "Crème Brûlée",
@@ -26,10 +63,10 @@ export const data = [
   {
     id: "MACR",
     image: {
-      thumbnail: "./src/assets/images/image-macaron-thumbnail.jpg",
-      mobile: "./src/assets/images/image-macaron-mobile.jpg",
-      tablet: "./src/assets/images/image-macaron-tablet.jpg",
-      desktop: "./src/assets/images/image-macaron-desktop.jpg",
+      thumbnail: Image3Thumbnail,
+      mobile: Image3Mobile,
+      tablet: Image3Tablet,
+      desktop: Image3Desktop,
     },
     name: "Macaron Mix of Five",
     category: "Macaron",
@@ -38,10 +75,10 @@ export const data = [
   {
     id: "TIR",
     image: {
-      thumbnail: "./src/assets/images/image-tiramisu-thumbnail.jpg",
-      mobile: "./src/assets/images/image-tiramisu-mobile.jpg",
-      tablet: "./src/assets/images/image-tiramisu-tablet.jpg",
-      desktop: "./src/assets/images/image-tiramisu-desktop.jpg",
+      thumbnail: Image4Thumbnail,
+      mobile: Image4Mobile,
+      tablet: Image4Tablet,
+      desktop: Image4Desktop,
     },
     name: "Classic Tiramisu",
     category: "Tiramisu",
@@ -50,10 +87,10 @@ export const data = [
   {
     id: "PIBAK",
     image: {
-      thumbnail: "./src/assets/images/image-baklava-thumbnail.jpg",
-      mobile: "./src/assets/images/image-baklava-mobile.jpg",
-      tablet: "./src/assets/images/image-baklava-tablet.jpg",
-      desktop: "./src/assets/images/image-baklava-desktop.jpg",
+      thumbnail: Image5Thumbnail,
+      mobile: Image5Mobile,
+      tablet: Image5Tablet,
+      desktop: Image5Desktop,
     },
     name: "Pistachio Baklava",
     category: "Baklava",
@@ -62,10 +99,10 @@ export const data = [
   {
     id: "LEMERP",
     image: {
-      thumbnail: "./src/assets/images/image-meringue-thumbnail.jpg",
-      mobile: "./src/assets/images/image-meringue-mobile.jpg",
-      tablet: "./src/assets/images/image-meringue-tablet.jpg",
-      desktop: "./src/assets/images/image-meringue-desktop.jpg",
+      thumbnail: Image6Thumbnail,
+      mobile: Image6Mobile,
+      tablet: Image6Tablet,
+      desktop: Image6Desktop,
     },
     name: "Lemon Meringue Pie",
     category: "Pie",
@@ -74,10 +111,10 @@ export const data = [
   {
     id: "REDVELC",
     image: {
-      thumbnail: "./src/assets/images/image-cake-thumbnail.jpg",
-      mobile: "./src/assets/images/image-cake-mobile.jpg",
-      tablet: "./src/assets/images/image-cake-tablet.jpg",
-      desktop: "./src/assets/images/image-cake-desktop.jpg",
+      thumbnail: Image7Thumbnail,
+      mobile: Image7Mobile,
+      tablet: Image7Tablet,
+      desktop: Image7Desktop,
     },
     name: "Red Velvet Cake",
     category: "Cake",
@@ -86,10 +123,10 @@ export const data = [
   {
     id: "SALCARBR",
     image: {
-      thumbnail: "./src/assets/images/image-brownie-thumbnail.jpg",
-      mobile: "./src/assets/images/image-brownie-mobile.jpg",
-      tablet: "./src/assets/images/image-brownie-tablet.jpg",
-      desktop: "./src/assets/images/image-brownie-desktop.jpg",
+      thumbnail: Image8Thumbnail,
+      mobile: Image8Mobile,
+      tablet: Image8Tablet,
+      desktop: Image8Desktop,
     },
     name: "Salted Caramel Brownie",
     category: "Brownie",
@@ -98,10 +135,10 @@ export const data = [
   {
     id: "VALPNCOT",
     image: {
-      thumbnail: "./src/assets/images/image-panna-cotta-thumbnail.jpg",
-      mobile: "./src/assets/images/image-panna-cotta-mobile.jpg",
-      tablet: "./src/assets/images/image-panna-cotta-tablet.jpg",
-      desktop: "./src/assets/images/image-panna-cotta-desktop.jpg",
+      thumbnail: Image9Thumbnail,
+      mobile: Image9Mobile,
+      tablet: Image9Tablet,
+      desktop: Image9Desktop,
     },
     name: "Vanilla Panna Cotta",
     category: "Panna Cotta",

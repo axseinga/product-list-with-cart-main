@@ -9,9 +9,10 @@ type CartConfirmationModalProps = {
 export const CartConfirmationModal = ({
   setIsOpen,
 }: CartConfirmationModalProps) => {
-  const { cart } = useCartStateStore();
+  const { cart, clearCart } = useCartStateStore();
   const handleStartNewOrder = () => {
     setIsOpen(false);
+    clearCart();
   };
 
   return (
@@ -50,11 +51,7 @@ type CartConfirmationItemProps = {
 const CartConfirmationItem = ({ item }: CartConfirmationItemProps) => {
   return (
     <li className="grid grid-cols-4 items-center gap-4 px-2 py-2 sm:grid-cols-6">
-      <img
-        src="./src/assets/images/image-waffle-thumbnail.jpg"
-        alt=""
-        className="py-2 sm:w-14"
-      />
+      <img src={item.image} alt="" className="py-2 sm:w-14" />
       <div className="col-span-2 my-2 mb-2 flex flex-col gap-1 text-sm">
         <h3 className="font-semibold text-rose900">{item.name}</h3>
         <div className="flex space-x-2">

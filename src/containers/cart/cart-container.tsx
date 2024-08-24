@@ -6,6 +6,7 @@ import { Button } from "../../components/button";
 import { CartEmpty } from "./cart-empty";
 import { CartConfirmationModal } from "./cart-confirmation-modal";
 import useCartStateStore from "../../store/cart-store";
+import IconCarbonNeutral from "../../assets/images/icon-carbon-neutral.svg";
 
 export const CartContainer = () => {
   const { cart } = useCartStateStore();
@@ -42,7 +43,7 @@ export const CartContainer = () => {
               </p>
             </div>
             <div className="mx-1 flex items-center justify-center gap-2 rounded-md bg-rose100 py-4 text-center text-sm">
-              <img src="./src/assets/images/icon-carbon-neutral.svg" alt="" />
+              <img src={IconCarbonNeutral} alt="" />
               <p>
                 This is <span className="font-semibold">carbon neutral</span>
                 delivery

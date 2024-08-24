@@ -20,6 +20,7 @@ type CartStateStoreT = {
   addItemToCart: (item: CartItemT) => void;
   updateItemCount: (item: CartItemT, operation: CartOperationT) => void;
   removeItemFromCart: (id: CartItemT["id"]) => void;
+  clearCart: () => void;
 };
 
 const useCartStateStore = create<CartStateStoreT>()(
@@ -30,7 +31,7 @@ const useCartStateStore = create<CartStateStoreT>()(
         addItemToCart(item) {
           set((state) => {
             const existingItem = state.cart.find(
-              (existingItem) => existingItem.id === item.id
+              (existingItem) => existingItem.id === item.id,
             );
             if (!existingItem) {
               return {
@@ -53,7 +54,7 @@ const useCartStateStore = create<CartStateStoreT>()(
         updateItemCount(item, operation) {
           set((state) => {
             const existingItem = state.cart.find(
-              (existingItem) => existingItem.id === item.id
+              (existingItem) => existingItem.id === item.id,
             );
             if (!existingItem) {
               return {
@@ -77,12 +78,12 @@ const useCartStateStore = create<CartStateStoreT>()(
         removeItemFromCart(id) {
           set((state) => {
             const existingItem = state.cart.find(
-              (existingItem) => existingItem.id === id
+              (existingItem) => existingItem.id === id,
             );
             if (existingItem) {
               return {
                 cart: state.cart.filter(
-                  (existingItem) => existingItem.id !== id
+                  (existingItem) => existingItem.id !== id,
                 ),
               };
             } else
@@ -91,12 +92,19 @@ const useCartStateStore = create<CartStateStoreT>()(
               };
           });
         },
+        clearCart() {
+          set(() => {
+            return {
+              cart: [],
+            };
+          });
+        },
       };
     },
     {
       name: "DESSERTS_SHOPPING_CART",
-    }
-  )
+    },
+  ),
 );
 
 export default useCartStateStore;
