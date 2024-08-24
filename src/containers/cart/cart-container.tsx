@@ -42,7 +42,7 @@ export const CartContainer = () => {
               </p>
             </div>
             <div className="mx-1 flex items-center justify-center gap-2 rounded-md bg-rose100 py-4 text-center text-sm">
-              <img src="/src/assets/images/icon-carbon-neutral.svg" alt="" />
+              <img src="./src/assets/images/icon-carbon-neutral.svg" alt="" />
               <p>
                 This is <span className="font-semibold">carbon neutral</span>
                 delivery

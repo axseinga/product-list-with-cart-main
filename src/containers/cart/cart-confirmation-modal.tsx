@@ -51,7 +51,7 @@ const CartConfirmationItem = ({ item }: CartConfirmationItemProps) => {
   return (
     <li className="grid grid-cols-4 items-center gap-4 px-2 py-2 sm:grid-cols-6">
       <img
-        src="/src/assets/images/image-waffle-thumbnail.jpg"
+        src="./src/assets/images/image-waffle-thumbnail.jpg"
         alt=""
         className="py-2 sm:w-14"
       />
